@@ -3,12 +3,10 @@ package client
 import (
 	"io"
 	"runtime"
-	"scray/config"
 	"time"
 )
 
 type Base struct {
-	config *config.Config
 	requests map[uint16]RequestInterface
 	stopedRequests map[uint16]RequestInterface
 	stopedPage chan uint16
