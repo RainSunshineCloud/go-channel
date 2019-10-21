@@ -27,7 +27,7 @@ type ClientInterface interface {
 	Run(reqs map[uint16] RequestInterface) RequestInterface
 	Stop(request_id uint16)
 	Start(request_id uint16)
-	Restart(request_id uint16)
+	ReStart(request_id uint16)
 }
 
 
