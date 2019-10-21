@@ -24,10 +24,10 @@ type RequestInterface interface {
 }
 
 type ClientInterface interface {
-	Run(reqs map[uint16] RequestInterface) RequestInterface
+    Run(reqs map[uint16] RequestInterface) RequestInterface
 	Stop(request_id uint16)
 	Start(request_id uint16)
-	ReStart(request_id uint16)
+	Restart(request_id uint16)
 }
 
 
@@ -59,8 +59,6 @@ func (this *Base) AddStopedPage (id uint16,requests RequestInterface) {
 	}
 }
 
-
-
 func (this *Base) Stop(request_id uint16) {
 	if request_id == 0 {
 		for req_id,_ := range this.requests {
@@ -80,9 +78,6 @@ func (this *Base) Stop(request_id uint16) {
 	runtime.GC()
 }
 
-/*
-	启动
-*/
 func (this *Base) Start(request_id uint16) {
 	//开始
 	if val,ok := this.requests[request_id];ok {
@@ -113,26 +108,18 @@ func (this *Base) Start(request_id uint16) {
 
 }
 
-
-/*
-	重新启动
-*/
 func (this *Base) Restart (request_id uint16) {
 	this.Stop(request_id);
 	this.Start(request_id)
 }
 
-
-
 func (this *Base) RunBefore () {
 
 }
 
-
 func (this *Base) RunAfter () {
 
 }
-
 
 func (this *Base) RunPageBefore(request RequestInterface) {
 
