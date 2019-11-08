@@ -3,7 +3,7 @@ package test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/RainSunshineCloud/scrapy/message"
+	"github.com/RainSunshineCloud/scrapy/channel"
 	"github.com/RainSunshineCloud/scrapy/receiver"
 	"io/ioutil"
 	"net/http"
