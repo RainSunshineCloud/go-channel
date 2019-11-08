@@ -8,7 +8,7 @@
 - InMessageDataInterface 传入消息接口
 
 ### 用法
-
+```
 var manager channel.Manager;
 
 func main () {
@@ -101,3 +101,4 @@ func (this *OutMessageData) OutHandler(err error) []byte {
 	return by;
 }
 
+```
