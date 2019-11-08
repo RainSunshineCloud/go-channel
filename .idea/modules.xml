@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/scray.iml" filepath="$PROJECT_DIR$/.idea/scray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/messages.iml" filepath="$PROJECT_DIR$/.idea/messages.iml" />
     </modules>
   </component>
 </project>
