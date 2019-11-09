@@ -3,8 +3,8 @@ package test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/RainSunshineCloud/scrapy/channel"
-	"github.com/RainSunshineCloud/scrapy/receiver"
+	"github.com/RainSunshineCloud/go-channel/channel"
+	"github.com/RainSunshineCloud/go-channel/receiver"
 	"io/ioutil"
 	"net/http"
 	"time"
