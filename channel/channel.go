@@ -1,8 +1,8 @@
 package channel
 
 import (
-	"github.com/RainSunshineCloud/scrapy/provider"
-	"github.com/RainSunshineCloud/scrapy/receiver"
+	"github.com/RainSunshineCloud/go-channel/provider"
+	"github.com/RainSunshineCloud/go-channel/receiver"
 )
 
 type Channel struct {
