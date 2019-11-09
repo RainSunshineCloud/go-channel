@@ -72,7 +72,6 @@ func (this timerProvider) Run () {
 }
 
 
-
 //传送数据
 type MessageData struct {
 	NowCode []uint
